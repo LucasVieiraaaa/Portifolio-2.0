@@ -49,6 +49,14 @@ body {
     color: #d89b6e;
 }
 
+.p-grey{
+    color: #afb0b4; /* Cinza Claro */
+
+    & li{
+        color: #afb0b4 /* Cinza Claro */
+    }
+}
+
 .card-container {
     padding: 4em;
     margin: 5em;
