@@ -41,7 +41,8 @@ body {
 }
 
 * {
-    color: #FFFFFF
+    color: #FFFFFF;
+    text-align: justify;
 }
 
 .mark{
@@ -50,7 +51,7 @@ body {
 
 .card-container {
     padding: 4em;
-    margin: 3em;
+    margin: 5em;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 15px 25px;
     border-radius: 1em;
     max-width: 55em;
