@@ -21,8 +21,8 @@
         text-align: center;
     }
 }
-.mini-card-container-02:hover{
-    background-color: #d89b6e;
+.mini-card-container-02:hover {
+    background-color: #00cfef;
     transform: scale(1.05);
 }
 
@@ -38,9 +38,88 @@ h3 {
     gap: 0.6em;
     flex-wrap: wrap;
 }
-.d-flex-03{
+
+.d-flex-03 {
     display: flex;
     gap: 0.6em;
-    flex-wrap: wrap;
-    justify-content: center;  
+    flex-wrap: wrap;  
+    justify-content: center;
+}
+.w-45{
+    width: 45px;  
+}
+
+// Media Queries for Different Screen Sizes
+
+@media (max-width: 1775px) {
+    .card-container-02 {
+        max-width: 90em;
+    }
+}
+
+@media (max-width: 1366px) {
+    .card-container-02 {
+        margin-top: 0px;
+        max-width: 70em;
+    }
+}
+
+@media (max-width: 1024px) {
+    .card-container-02 {
+        padding: 2em;
+        margin: 1.5em;
+        max-width: 50em;
+    }
+    .mini-card-container-02 {
+        padding: 1em;
+        // max-width: 2.5em;
+    }
+    h3 {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-container-02 {
+        padding: 1.5em;
+        margin: 1em;
+        max-width: 40em;
+    }
+    .mini-card-container-02 {
+        padding: 0.8em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container-02 {
+        padding: 1em;
+        margin: 0.5em;
+        max-width: 100%;
+    }
+    .mini-card-container-02 {
+        padding: 0.6em;
+    }
+    h3 {
+        font-size: 0.9em;
+    }
+    .w-45{
+        width: 35px;  
+    }
+}
+
+@media (max-width: 360px) {
+    .card-container-02 {
+        padding: 0.5em;
+        margin: 0.5em;
+    }
+    .mini-card-container-02 {
+        padding: 0.5em;
+    }
+    h3 {
+        font-size: 0.8em;
+    }
+
 }
