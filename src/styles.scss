@@ -16,8 +16,10 @@ $portifolio-lucas-theme: mat.define-theme((color: (theme-type: light,
 // Include theme styles for core and each component used in your app.
 :root {
     @include mat.all-component-themes($portifolio-lucas-theme);
-    --cor-pry: #00cfef;
-    --cor-pry-bg: #00cfef;
+    --cor-pry: #efa300;
+    --cor-pry-bg: #efa300;
+    --cor-pry-border: 3px solid #efa300;
+    
 }
 
 body {
@@ -109,7 +111,7 @@ body {
     text-align: center;
     font-weight: bold;
     padding: 0.7em 2em;
-    border: 3px solid #00cfef;
+    border: var(--cor-pry-border);
     background-color: transparent;
     border-radius: 0.5em;
     position: relative;
@@ -129,7 +131,7 @@ body {
     bottom: 0;
     opacity: 0;
     content: '';
-    color: var(--cor-pry-bg);
+    background-color: var(--cor-pry-bg);
     z-index: -1;
 }
 
@@ -206,6 +208,10 @@ body {
 
 .w-01 {
     width: 45px;
+}
+
+.td-none{
+    text-decoration: none;
 }
 
 @media (max-width: 1775px) {
