@@ -6,20 +6,18 @@
 @include mat.core();
 
 // Define the theme object.
-$portifolio-lucas-theme: mat.define-theme((
-  color: (
-    theme-type: light,
-    primary: mat.$azure-palette,
-    tertiary: mat.$blue-palette,
-  ),
-  density: (
-    scale: 0,
-  )
-));
+$portifolio-lucas-theme: mat.define-theme((color: (theme-type: light,
+                primary: mat.$azure-palette,
+                tertiary: mat.$blue-palette,
+            ),
+            density: (scale: 0,
+            )));
 
 // Include theme styles for core and each component used in your app.
 :root {
-  @include mat.all-component-themes($portifolio-lucas-theme);
+    @include mat.all-component-themes($portifolio-lucas-theme);
+    --cor-pry: #00cfef;
+    --cor-pry-bg: #00cfef;
 }
 
 body {
@@ -33,14 +31,14 @@ body {
 }
 
 .mark {
-    color: #00cfef;
+    color: var(--cor-pry);
 }
 
 .p-grey {
-    color: #afb0b4; /* Cinza Claro */
+    color: #afb0b4;
 
     & li {
-        color: #afb0b4; /* Cinza Claro */
+        color: #afb0b4;
     }
 }
 
@@ -103,7 +101,6 @@ body {
     background-color: rgba(255, 255, 255, 0.16);
 }
 
-/* From Uiverse.io by adamgiebl */
 .button-02 {
     font-size: 0.9em;
     letter-spacing: 2px;
@@ -117,7 +114,7 @@ body {
     border-radius: 0.5em;
     position: relative;
     box-shadow: 0 2px 10px rgba(48, 29, 29, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
-    color: #00cfef;
+    color: var(--cor-pry);
     text-decoration: none;
     transition: 0.3s ease all;
     z-index: 1;
@@ -132,7 +129,7 @@ body {
     bottom: 0;
     opacity: 0;
     content: '';
-    background-color: #00cfef;
+    color: var(--cor-pry-bg);
     z-index: -1;
 }
 
@@ -160,12 +157,56 @@ body {
     margin-left: 0em;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+.mini-card-container-03 {
+    padding: 1.2em;
+    padding-right: 1.6em;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 15px 25px;
+    border-radius: 1em;
+    transition: 0.3s;
+    max-width: 26%;
+    gap: 2em;
+
+
+    & button {
+        background-color: transparent;
+        color: #ffffff;
+        border: 0px solid;
+        text-align: center;
+    }
+
+    & p {
+        text-align: left !important;
+
+    }
+}
+
+.mini-card-container-04 {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.ft-1 {
+    font-size: 1.5em
+}
+
+.d-flex-05 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: center;
+}
+
+.w-01 {
+    width: 45px;
+}
 
 @media (max-width: 1775px) {
     .card-container-02 {
@@ -173,6 +214,42 @@ html, body {
         border-radius: 1em;
         max-width: 40em;
     }
+    .card-container {
+        max-width: 85em;
+        width: 85em;
+    }
+    .ft-1{
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 1615px){
+    .button-02{
+        font-size: 0.7em;
+    }
+    .mark{
+        font-size: 0.8em;
+    }
+    .card-container {
+        max-width: 75em;
+        width: 75em;
+    }
+    .mini-card-container-03 {
+        
+    }
+}
+
+@media (max-width: 1559px) {
+    .button-02{
+        font-size: 0.65em;
+    }
+    .btn-github{
+        font-size: 0.75em;
+    }
+    h3{
+        font-size: 1em;
+    }
+
 }
 
 @media (max-width: 1366px) {
@@ -182,8 +259,11 @@ html, body {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .card-container {
         margin-bottom: 1em;
+        max-width: 85em;
+        width: 85em;
     }
 }
 
@@ -191,31 +271,38 @@ html, body {
     .card-container {
         padding: 2em;
         margin: 2em;
-        max-width: 30em;
+        max-width: 50em;
     }
+
     .profile-picture {
         width: 12em;
     }
+
     .fs-10 {
         font-size: 2.2em;
     }
+
     .fs-09 {
         font-size: 1.8em;
     }
-    *{
-        font-size: 1.02em;
+
+    * {
+        font-size: 1em;
     }
+    .mark {
+        font-size: 1em;
+    }
+
     .button-container-02 {
         display: flex;
         gap: 1em;
         margin: 3em;
-        margin-left: 0em;
         flex-wrap: wrap;
         flex-direction: column;
     }
 }
 
-@media (max-width: 900px){
+@media (max-width: 900px) {
     .button-container-02 {
         display: flex;
         gap: 1em;
@@ -224,27 +311,31 @@ html, body {
         flex-wrap: wrap;
         flex-direction: column;
     }
-    *{
+
+    * {
         font-size: 1.02em;
     }
 }
 
 @media (max-width: 768px) {
-    .card-container {
-        padding: 1.5em;
-        margin: 1.5em;
-        max-width: 50em;
-    }
+    // .card-container {
+    //     margin: 2em;
+    //     max-width: 45em;
+    // }
+
     .profile-picture {
         width: 10em;
     }
+
     .fs-10 {
         font-size: 1.8em;
     }
+
     .fs-09 {
         font-size: 1.6em;
     }
-    *{
+
+    * {
         font-size: 1.01em;
     }
 
@@ -256,12 +347,15 @@ html, body {
         margin: 1em;
         max-width: 100%;
     }
+
     .profile-picture {
         width: 8em;
     }
+
     .fs-10 {
         font-size: 1.5em;
     }
+
     .fs-09 {
         font-size: 1.3em;
     }
@@ -272,12 +366,15 @@ html, body {
         padding: 0.5em;
         margin: 0.5em;
     }
+
     .profile-picture {
         width: 6em;
     }
+
     .fs-10 {
         font-size: 1.2em;
     }
+
     .fs-09 {
         font-size: 1em;
     }

@@ -53,15 +53,38 @@ h3 {
 
 @media (max-width: 1775px) {
     .card-container-02 {
-        max-width: 90em;
+        max-width: 60em;
+    }
+
+}
+
+@media (max-width: 1559px) {
+    .card-container-02{
+        max-width: 22em;
+        width: 22em;
+    }
+    .mini-card-container-02{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 2.2em;
+        width: 2.2em;  
+        padding: 1.3em !important; 
+        height: 2em;
+    }
+    .w-45{
+        width: 45px;
     }
 }
 
 @media (max-width: 1366px) {
     .card-container-02 {
         margin-top: 0px;
-        max-width: 70em;
+        max-width: 65em;
+        width: auto;
     }
+    
 }
 
 @media (max-width: 1024px) {
@@ -69,13 +92,23 @@ h3 {
         padding: 2em;
         margin: 1.5em;
         max-width: 50em;
+        width: 50em;
     }
     .mini-card-container-02 {
         padding: 1em;
-        // max-width: 2.5em;
     }
     h3 {
         font-size: 1.1em;
+    }
+    .mini-card-container-03 {
+        max-width: 100%;
+    }
+}
+@media (max-width: 900px) {
+    .card-container-02 {
+        padding: 1.5em;
+        margin: 1em;
+        max-width: 40em;
     }
 }
 
@@ -83,7 +116,7 @@ h3 {
     .card-container-02 {
         padding: 1.5em;
         margin: 1em;
-        max-width: 40em;
+        max-width: 35em;
     }
     .mini-card-container-02 {
         padding: 0.8em;
@@ -97,7 +130,7 @@ h3 {
     .card-container-02 {
         padding: 1em;
         margin: 0.5em;
-        max-width: 100%;
+        // max-width: 100%;
     }
     .mini-card-container-02 {
         padding: 0.6em;
