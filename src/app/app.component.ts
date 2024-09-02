@@ -13,7 +13,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 })
 
 export class AppComponent {
-  title = 'portifolio-lucas';
+  title = 'portfolio-lucas';
 
   WhatsApp() {
     var x = "5531975580097";

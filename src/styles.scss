@@ -6,7 +6,7 @@
 @include mat.core();
 
 // Define the theme object.
-$portifolio-lucas-theme: mat.define-theme((color: (theme-type: light,
+$portfolio-lucas-theme: mat.define-theme((color: (theme-type: light,
                 primary: mat.$azure-palette,
                 tertiary: mat.$blue-palette,
             ),
@@ -15,7 +15,7 @@ $portifolio-lucas-theme: mat.define-theme((color: (theme-type: light,
 
 // Include theme styles for core and each component used in your app.
 :root {
-    @include mat.all-component-themes($portifolio-lucas-theme);
+    @include mat.all-component-themes($portfolio-lucas-theme);
     --cor-pry: #efa300;
     --cor-pry-bg: #efa300;
     --cor-pry-border: 3px solid #efa300;

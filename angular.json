@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "portifolio-lucas": {
+    "portfolio-lucas": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/portifolio-lucas",
+            "outputPath": "dist/portfolio-lucas",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "portifolio-lucas:build:production"
+              "buildTarget": "portfolio-lucas:build:production"
             },
             "development": {
-              "buildTarget": "portifolio-lucas:build:development"
+              "buildTarget": "portfolio-lucas:build:development"
             }
           },
           "defaultConfiguration": "development"
