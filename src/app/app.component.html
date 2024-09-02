@@ -15,19 +15,19 @@
   </p>
   <p class="p-grey"> My main goal is to always deliver agile and intelligent solutions.</p>
   <div class="d-flex-03">
-    <div class="mini-card-container-02">
-      <a href="https://www.linkedin.com/in/lucas-vieira-souza-0435b1260/" class="td-none">
+    <a href="https://www.linkedin.com/in/lucas-vieira-souza-0435b1260/" class="td-none">
+      <div class="mini-card-container-02">
         <button>
           <img matTooltip="LinkedIn" src="../assets/icons8-linkedin.svg" alt="LinkedIn">
         </button>
-      </a>
-    </div>
-    <div class="mini-card-container-02">
+      </div>
+    </a>
+    <div class="mini-card-container-02" (click)="Email()">
       <button>
         <img matTooltip="Email" src="../assets/icons8-gmail-novo.svg" alt="Email" class="w-45">
       </button>
     </div>
-    <div class="mini-card-container-02">
+    <div class="mini-card-container-02" (click)="WhatsApp()">
       <button>
         <img matTooltip="WhatsApp" src="../assets/icons8-whatsapp.svg" alt="WhatsApp">
       </button>
@@ -70,7 +70,8 @@
   <div class="d-flex-02">
     <div class="mini-card-container-02">
       <button>
-        <img matTooltip="JavaScript" src="../assets/javascript-js.svg" alt="JavaScript" class="w-45" style="border-radius: 0.5em;">
+        <img matTooltip="JavaScript" src="../assets/javascript-js.svg" alt="JavaScript" class="w-45"
+          style="border-radius: 0.5em;">
       </button>
     </div>
     <div class="mini-card-container-02">
