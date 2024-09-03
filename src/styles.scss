@@ -240,9 +240,6 @@ body {
         max-width: 75em;
         width: 75em;
     }
-    .mini-card-container-03 {
-        
-    }
 }
 
 @media (max-width: 1559px) {
@@ -317,6 +314,7 @@ body {
         gap: 1em;
         margin: 3em;
         margin-left: 0em;
+        margin-right: 0em;
         flex-wrap: wrap;
         flex-direction: column;
     }
@@ -331,6 +329,11 @@ body {
     //     margin: 2em;
     //     max-width: 45em;
     // }
+    .mini-card-container-03 {
+        max-width: 45%;
+        padding: 1em;
+        gap: 1.5em;
+      }
 
     .profile-picture {
         width: 10em;
@@ -356,6 +359,15 @@ body {
         margin: 1em;
         max-width: 100%;
     }
+    .mini-card-container-03 {
+        max-width: 100%;
+        padding: 0.8em;
+        gap: 1em;
+      }
+    
+      .d-flex-05 {
+        gap: 1em;
+      }
 
     .profile-picture {
         width: 8em;
