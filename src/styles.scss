@@ -388,3 +388,22 @@ body {
         font-size: 1em;
     }
 }
+
+// animations
+
+.card-container {
+    opacity: 0;
+    animation: slideInFromBottom 1s forwards;
+  }
+  
+  @keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
