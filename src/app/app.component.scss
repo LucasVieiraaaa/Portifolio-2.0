@@ -7,8 +7,10 @@
 }
 
 .mini-card-container-02 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 1.2em;
-    padding-right: 1.6em;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 15px 25px;
     border-radius: 1em;
     max-width: 3.1em;
